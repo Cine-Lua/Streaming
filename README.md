@@ -45,7 +45,7 @@ Conta no Google AdSense ou AdMob para exibição de anúncios.
 
 1. Clone este repositório para seu ambiente local:
 
-git clone https://github.com/seu-usuario/cine-lua.git
+git clone https://github.com/Seu-Nome/Streaming.git
 cd cine-lua
 
 
