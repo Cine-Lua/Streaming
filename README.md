@@ -78,3 +78,5 @@ npx react-native run-android
 # Estrutura do Projeto
 
 <img src="https://i.ibb.co/PGkPZnTq/carbon.png" alt="carbon" border="0"></img>
+
+
