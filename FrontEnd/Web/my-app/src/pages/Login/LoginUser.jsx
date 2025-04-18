@@ -21,10 +21,14 @@ export default function LoginUser() {
 
   return (
     <div className="login-container">
-      <div className="top-right">
-      <p className="textoCadastro">Ainda não tem uma conta?</p>
-        <Link to="/register"> Criar conta</Link>
-      </div>
+        <div className="top-right">
+          <div className="text-top-right">
+          <p className="textoCadastro">Ainda não tem uma conta?</p>
+          </div>
+          <div className="register">
+            <Link to="/register"> Criar conta</Link>
+          </div>
+        </div>
       <form onSubmit={handleLogin} className="login-form">
         <h2>Entrar no Streaming</h2>
         <input

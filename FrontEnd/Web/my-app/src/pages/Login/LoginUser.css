@@ -49,18 +49,48 @@
   top: 20px;
   right: 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   justify-content: space-between;
-}
-
-.top-right a {
-  text-decoration: none;
-  color: #007bff;
-  font-weight: bold;
+  max-width: 50%;
+  background-color: #e50914;
+  padding-left: 10px;
+  border-radius: 1vh;
+  height: 10vh;
 }
 
 .textoCadastro{
   color: #fff;
   margin-right: 10px;
+  text-align: center;
+}
+
+.register{
+  background-color: #1e1e1e;
+  border-radius: 0 1vh 1vh 0;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.register a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.register:hover{
+  background-color: #4c4b4b;
+  cursor: pointer;
+}
+
+.text-top-right{
+  border-radius: 0 1vh 1vh 0;
+  width: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

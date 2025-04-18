@@ -23,10 +23,14 @@ export default function RegisterUser() {
 
   return (
     <div className="login-container">
-      <div className="top-right">
-      <p className="textoCadastro">Já tem uma conta?</p>
-        <Link to="/">Login</Link>
-      </div>
+        <div className="top-right">
+          <div className="text-top-right">
+          <p className="textoCadastro">Já tem uma conta?</p>
+          </div>
+          <div className="register">
+            <Link to="/"> Login</Link>
+          </div>
+        </div>
       <form onSubmit={cadastrar} className="login-form">
         <h2>Cadastro</h2>
         <input
