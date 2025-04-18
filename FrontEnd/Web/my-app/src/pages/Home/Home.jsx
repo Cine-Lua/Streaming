@@ -2,8 +2,8 @@ import "./Home.css";
 
 function Home() {
     return (
-        <div>
-            <h1>Olá mundo</h1>
+        <div className={container}>
+            <h1>teste</h1>
         </div>
     );
   }
