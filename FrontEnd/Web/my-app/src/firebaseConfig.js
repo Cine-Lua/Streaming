@@ -4,12 +4,12 @@ import { getFirestore } from 'firebase/firestore';
 import { getStorage } from 'firebase/storage';
 
 const firebaseConfig = {
-  apiKey: "SUA_API_KEY",
-  authDomain: "SEU_DOMINIO.firebaseapp.com",
-  projectId: "SEU_PROJECT_ID",
-  storageBucket: "SEU_BUCKET.appspot.com",
-  messagingSenderId: "ID_MENSAGEM",
-  appId: "SEU_APP_ID"
+  apiKey: "AIzaSyBPKjGsUJww2Pj2m_WgCkjqjBQw4geXYxw",
+  authDomain: "cine-lua.firebaseapp.com",
+  projectId: "cine-lua",
+  storageBucket: "cine-lua.firebasestorage.app",
+  messagingSenderId: "657248709971",
+  appId: "1:657248709971:web:dbce557e0a5d8033d505a6"
 };
 
 const app = initializeApp(firebaseConfig);
