@@ -1,4 +1,7 @@
-/* src/pages/Login.css */
+.root{
+  background-color: #111;
+}
+
 .login-container {
   display: flex;
   justify-content: center;
@@ -54,7 +57,7 @@
   background-color: #e50914;
   padding-left: 10px;
   border-radius: 1vh;
-  height: 10vh;
+  height: 8vh;
 }
 
 .textoCadastro{
@@ -70,8 +73,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .register a {

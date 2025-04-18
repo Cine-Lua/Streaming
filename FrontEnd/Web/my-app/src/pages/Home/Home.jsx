@@ -1,10 +1,10 @@
-
+import "./Home.css";
 
 function Home() {
     return (
-        <>
-            <h1>Olá, Mundo</h1>
-        </>
+        <div>
+            <h1>Olá mundo</h1>
+        </div>
     );
   }
   
