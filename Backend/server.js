@@ -15,7 +15,7 @@ app.get('/payment', (req, res) => {
 });
 
 // Rota POST para simular o pagamento
-app.post('/congratulation', (req, res) => {
+app.post('/payments/congratulation', (req, res) => {
     console.log("Pagamento recebido:", req.body); // Mostra os dados enviados no terminal
     res.status(200).json({ sucesso: true }); // Envia resposta JSON para o frontend
 });
