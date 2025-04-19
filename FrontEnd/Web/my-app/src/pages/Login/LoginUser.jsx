@@ -20,33 +20,35 @@ export default function LoginUser() {
   };
 
   return (
-    <div className="login-container">
-        <div className="top-right">
-          <div className="text-top-right">
-          <p className="textoCadastro">Ainda não tem uma conta?</p>
+    <div className="containerLogin">
+      <div className="login-container">
+          <div className="top-right">
+            <div className="text-top-right">
+            <p className="textoCadastro">Ainda não tem uma conta?</p>
+            </div>
+            <div className="register">
+              <Link to="/register"> Criar conta</Link>
+            </div>
           </div>
-          <div className="register">
-            <Link to="/register"> Criar conta</Link>
-          </div>
-        </div>
-      <form onSubmit={handleLogin} className="login-form">
-        <h2>Entrar no Streaming</h2>
-        <input
-          type="email"
-          placeholder="E-mail"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-        <input
-          type="password"
-          placeholder="Senha"
-          value={senha}
-          onChange={(e) => setSenha(e.target.value)}
-          required
-        />
-        <button type="submit">Entrar</button>
-      </form>
+        <form onSubmit={handleLogin} className="login-form">
+          <h2>Entrar no Streaming</h2>
+          <input
+            type="email"
+            placeholder="E-mail"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <input
+            type="password"
+            placeholder="Senha"
+            value={senha}
+            onChange={(e) => setSenha(e.target.value)}
+            required
+          />
+          <button type="submit">Entrar</button>
+        </form>
+      </div>
     </div>
   );
 }

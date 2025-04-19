@@ -2,7 +2,7 @@ import { useState } from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebaseConfig";
 import { useNavigate, Link } from "react-router-dom";
-import "../Login/LoginUser.css"; // usar o mesmo estilo, se quiser
+import "../Login/LoginUser.css";
 
 export default function RegisterUser() {
   const [email, setEmail] = useState("");
@@ -22,33 +22,35 @@ export default function RegisterUser() {
   };
 
   return (
-    <div className="login-container">
-        <div className="top-right">
-          <div className="text-top-right">
-          <p className="textoCadastro">Já tem uma conta?</p>
+    <div className="containerLogin">
+      <div className="login-container">
+          <div className="top-right">
+            <div className="text-top-right">
+            <p className="textoCadastro">Já tem uma conta?</p>
+            </div>
+            <div className="register">
+              <Link to="/"> Login</Link>
+            </div>
           </div>
-          <div className="register">
-            <Link to="/"> Login</Link>
-          </div>
-        </div>
-      <form onSubmit={cadastrar} className="login-form">
-        <h2>Cadastro</h2>
-        <input
-          type="email"
-          placeholder="E-mail"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-        <input
-          type="password"
-          placeholder="Senha"
-          value={senha}
-          onChange={(e) => setSenha(e.target.value)}
-          required
-        />
-        <button type="submit">Cadastrar</button>
-      </form>
+        <form onSubmit={cadastrar} className="login-form">
+          <h2>Cadastro</h2>
+          <input
+            type="email"
+            placeholder="E-mail"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <input
+            type="password"
+            placeholder="Senha"
+            value={senha}
+            onChange={(e) => setSenha(e.target.value)}
+            required
+          />
+          <button type="submit">Cadastrar</button>
+        </form>
+      </div>
     </div>
   );
 }
